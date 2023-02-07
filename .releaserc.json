@@ -1,0 +1,19 @@
+{
+  "branches": ["main"],
+  "repositoryUrl": "https://github.com/PWNFinance/style-config.git",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    ["@semantic-release/git", {
+      "assets": ["CHANGELOG.md", "package.json"]
+    }],
+    ["@semantic-release/github", {
+      "successComment": false,
+      "failComment": false,
+      "failTitle": false
+    }]
+  ],
+  "debug": false
+}

@@ -1,0 +1,28 @@
+name: "Release and Publish Package"
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  publish:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+      - name: "Install or retrieve from cache node & npm."
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install
+        run: npm install --legacy-peer-deps
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ secrets.PWN_PAT }}
+          GITHUB_TOKEN: ${{ secrets.PWN_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release

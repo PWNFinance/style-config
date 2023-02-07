@@ -1,0 +1,46 @@
+{
+  "name": "@pwnfinance/style-config",
+  "version": "1.1.0",
+  "description": "Shared ESLint, StyleLint and Prettier configuration for PWN TypeScript projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PWNFinance/style-config.git"
+  },
+  "author": "PWN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PWNFinance/style-config/issues"
+  },
+  "homepage": "https://github.com/PWNFinance/style-config#readme",
+  "peerDependencies": {
+    "eslint": "^8.11.0"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-no-relative-import-paths": "^1.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "eslint-plugin-vue-a11y": "^0.0.31",
+    "prettier": "2.7.1",
+    "semantic-release": "^20.0.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript-eslint-language-service": "^5.0.0",
+    "vue-eslint-parser": "^9.0.2"
+  }
+}
